@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Estudio de Arquitectura</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            display: block;
+        }
+
+        /* Menú */
+        nav {
+            text-align: right;
+            padding: 20px;
+        }
+
+        nav button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            margin-left: 25px;
+            cursor: pointer;
+        }
+
+        nav button:hover {
+            text-decoration: underline;
+        }
+
+        /* Contenido */
+        main {
+            padding: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <img class="banner" src="banner.jpg" alt="Estudio de Arquitectura">
+
+    <nav>
+        <button onclick="mostrar('inicio')">Inicio</button>
+        <button onclick="mostrar('servicios')">Servicios</button>
+        <button onclick="mostrar('proyectos')">Proyectos</button>
+        <button onclick="mostrar('contactos')">Contactos</button>
+    </nav>
+
+    <main id="contenido">
+        <h1>Estudio de Arquitectura</h1>
+        <p>Bienvenido.</p>
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
