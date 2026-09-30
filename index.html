@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Estudio de Arquitectura</title>
+    <title>Marcos Kaliksztein arquitectos</title>
 
     <style>
         body {
@@ -41,26 +41,37 @@
         main {
             padding: 30px;
         }
+		
+		.mapa {
+			display: flex;
+			justify-content: center;
+		}
+
+		.mapa iframe {
+			width: 90%;
+			max-width: 800px;
+			height: 500px;
+		}
     </style>
 </head>
 
 <body>
-
-    <img class="banner" src="banner.jpg" alt="Estudio de Arquitectura">
-
-    <nav>
+	<nav>
         <button onclick="mostrar('inicio')">Inicio</button>
         <button onclick="mostrar('servicios')">Servicios</button>
         <button onclick="mostrar('proyectos')">Proyectos</button>
         <button onclick="mostrar('contactos')">Contactos</button>
     </nav>
-
+    <img class="banner" src="banner.jpg" alt="Estudio de Arquitectura">
+    
     <main id="contenido">
         <h1>Estudio de Arquitectura</h1>
         <p>Bienvenido.</p>
     </main>
 
     <script src="script.js"></script>
-
+	<div class="mapa">
+		<iframe src="https://www.google.com/maps/d/embed?mid=1mu4OMQ7hOnxNC6ciyuy22JC1nIjqwXA&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+	</div>	
 </body>
 </html>
