@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Marcos Kaliksztein arquitectos</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="icon" href="logo.jpeg">
     <style>
         body {
@@ -10,6 +11,8 @@
             background-color: black;
             color: white;
             font-family: Arial, sans-serif;
+			
+			cursor: url("cursor.png"), auto;<!--agregado-->
         }
 
         /* Banner */
@@ -63,8 +66,8 @@
 		}
 
 		.mapa iframe {
-			width: 90%;
-			max-width: 800px;
+			width: 95%;
+			max-width: 1000px;<!-- 800px-->
 			height: 500px;
 		}
 		
@@ -73,10 +76,24 @@
 		}
 		
 		.centrado {
-			width: 70%;
+			width: 95%;
+			max-width: 600px;
+			text-align: left;
 			margin: auto;
-			text-align: center;
 		}
+		
+		.nosotros {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+			gap: 10px;
+		}
+		
+		.foto_perfil {
+		width: 100%;
+		height: 100%;
+		object-fit: cover; <!-- que es estopx-->
+		}
+		
     </style>
 </head>
 
@@ -97,12 +114,17 @@
 		</section>
 
 		<section id="nosotros">
-			<h1>Inicio</h1>
-			<p class="centrado">Marcos Kaliksztein (Lima, 1941) Graduado en la Escola de Arquitectura da Universidade
-			de Minas Gerais, Brasil. Ha merecido premios en la Bienal de Arquitectura de 1978 y 
-			el Concurso Nacional de la Calidad Arquitectónica 2002. Autor de más de 200 proyectos arquitectónicos. 
-			Se suma a la opinión: que la Arquitectura es el producto de las condiciones sociales y las posibilidades técnicas. 
-			El resultado del proyecto depende de la visión de cada arquitecto y su valoración en el entorno donde se ubica. </p>
+			<div class="nosotros">
+				<img class="foto_perfil" src="foto_perfil.png">
+				<div>
+					<h1>Nosotros</h1>
+					<p class="centrado">Marcos Kaliksztein (Lima, 1941) Graduado en la Escola de Arquitectura da Universidade
+					de Minas Gerais, Brasil. Ha merecido premios en la Bienal de Arquitectura de 1978 y 
+					el Concurso Nacional de la Calidad Arquitectónica 2002. Autor de más de 200 proyectos arquitectónicos. 
+					Se suma a la opinión: que la Arquitectura es el producto de las condiciones sociales y las posibilidades técnicas. 
+					El resultado del proyecto depende de la visión de cada arquitecto y su valoración en el entorno donde se ubica. </p>
+				</div>
+			</div>
 		</section>
 
 		<section id="servicios">
